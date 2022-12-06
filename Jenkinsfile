@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage ('clone') {
         steps {
-            git branch:'master' , url : ''
+            git branch:'master' , url : 'https://github.com/vamsibakka/jenkins-dock.git'
         }
 
     }
