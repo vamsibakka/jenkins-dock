@@ -10,7 +10,7 @@ pipeline {
     stage ('image') {
         steps {
            sh """
-             cd jenkins-dock
+             cd ./jenkinsdock
              docker image build -t test:1.0 .
              docker container run -d --name conttest -P test:1.0
             """
